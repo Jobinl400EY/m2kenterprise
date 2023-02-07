@@ -1,0 +1,20 @@
+resources:
+  - m2kenterprise-git-event-triggerbinding.yaml
+  - m2kenterprise-git-repo-eventlistener.yaml
+  - m2kenterprise-git-repo-route.yaml
+  - m2kenterprise-image-registry-secret.yaml
+  - m2kenterprise-run-clone-build-push-triggertemplate.yaml
+  - m2kenterprise-tekton-triggers-admin-rolebinding.yaml
+  - gateway-vcapasenv-secret.yaml
+  - inventory-vcapasenv-secret.yaml
+  - m2kenterprise-clone-push-serviceaccount.yaml
+  - m2kenterprise-tekton-triggers-admin-role.yaml
+  - frontend-vcapasenv-secret.yaml
+  - customers-vcapasspringbootproperties-secret.yaml
+  - m2kenterprise-clone-build-push-pipeline.yaml
+  - m2kenterprise-tekton-triggers-admin-serviceaccount.yaml
+  - orders-vcapasspringbootproperties-secret.yaml
+  - customers-vcapasenv-secret.yaml
+  - inventory-vcapasspringbootproperties-secret.yaml
+  - orders-vcapasenv-secret.yaml
+  - gateway-vcapasspringbootproperties-secret.yaml

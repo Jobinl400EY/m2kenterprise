@@ -1,0 +1,12 @@
+resources:
+  - m2kenterprise-web-hook-orders-secret.yaml
+  - m2kenterprise-clone-build-push-frontend-buildconfig.yaml
+  - m2kenterprise-git-repo-generic-secret.yaml
+  - m2kenterprise-web-hook-gateway-secret.yaml
+  - m2kenterprise-web-hook-inventory-secret.yaml
+  - m2kenterprise-web-hook-customers-secret.yaml
+  - m2kenterprise-web-hook-frontend-secret.yaml
+  - m2kenterprise-clone-build-push-customers-buildconfig.yaml
+  - m2kenterprise-clone-build-push-gateway-buildconfig.yaml
+  - m2kenterprise-clone-build-push-inventory-buildconfig.yaml
+  - m2kenterprise-clone-build-push-orders-buildconfig.yaml
