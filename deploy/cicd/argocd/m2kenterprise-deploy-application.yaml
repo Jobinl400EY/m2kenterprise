@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  name: m2kargo-enterprise
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: m2kenterprise
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: deploy/yamls
+    repoURL: https://github.com/Jobinl400EY/m2kenterprise
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
+
+
