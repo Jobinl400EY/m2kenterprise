@@ -7,20 +7,22 @@ spec:
   nodeSelector: null
   output:
     to:
-      kind: ImageStreamTag
-      name: orders-latest:latest
+      kind: DockerImage
+      name: quay.io/jobinl400ey/orders:latest
+    pushSecret:
+      name: dockerquay
   postCommit: {}
   resources: {}
   source:
     git:
       ref: main
-      uri: ""
+      uri: https://github.com/Jobinl400EY/m2kenterprise
     sourceSecret:
       name: m2kenterprise-git-repo-generic
     type: Git
   strategy:
     dockerStrategy:
-      dockerfilePath: '<TODO: insert path to the Dockerfile>'
+      dockerfilePath: source/orders/Dockerfile
     type: Docker
   triggers:
     - generic:
