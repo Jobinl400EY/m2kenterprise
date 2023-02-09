@@ -15,7 +15,9 @@
 FROM registry.access.redhat.com/ubi8/ubi:latest AS customers-buildstage
 RUN yum install -y java-1.8.0-openjdk-devel
 
+RUN pwd
 WORKDIR /app
+RUN pwd
 # copy only the pom and download the dependencies for caching purposes
 COPY pom.xml .
 COPY mvnw .
